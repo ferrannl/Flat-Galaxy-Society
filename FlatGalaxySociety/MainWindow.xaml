@@ -1,0 +1,72 @@
+<Window x:Class="FlatGalaxySociety.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlatGalaxySociety" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:converters="clr-namespace:FlatGalaxySociety.Utils.Converters"
+        mc:Ignorable="d"
+        Title="Flat galaxy society" Height="600" Width="800" DataContext="{Binding Main, Source={StaticResource Locator}}"        
+        Icon="Assets/icon.ico"
+         SizeToContent="WidthAndHeight" ResizeMode="NoResize">
+    <i:Interaction.Behaviors>
+        <local:KeyDownBehaviour KeyDownCommand="{Binding KeyDownCommand}"/>
+    </i:Interaction.Behaviors>
+    <Window.Resources>
+        <converters:StringToColorConverter x:Key="StringToColorConverter" />
+    </Window.Resources>
+    <Grid>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Header="Disc" Command="{Binding SetupGalaxyDiscCommand}"/>
+                    <MenuItem Header="Http" Command="{Binding SetupGalaxyHttpCommand}"/>
+                </MenuItem>
+                <MenuItem Header="_Simulatie">
+                    <MenuItem Header="Starten/Pauzeren" Command="{Binding PlayPauseCommand}"/>
+                    <MenuItem Header="Vertragen" Command="{Binding SlowDownCommand}"/>
+                    <MenuItem Header="Versnellen" Command="{Binding SpeedUpCommand}"/>
+                    <MenuItem Header="Terugspringen (5 seconden)" Command="{Binding PlayBackCommand}"/>
+                </MenuItem>
+                <MenuItem Header="_Instellingen">
+                    <MenuItem Header="Configureer sneltoetsen" Command="{Binding OpenShortcutsCommand}"/>
+                </MenuItem>
+            </Menu>
+            <Canvas Width="800" Height="600">
+                <ItemsControl ItemsSource="{Binding Path=ObservableConnections}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Line Stroke="Blue"
+    StrokeThickness="1"  X1="{Binding x1}" X2="{Binding x2}" Y1="{Binding y1}" Y2="{Binding y2}"></Line>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+                <ItemsControl ItemsSource="{Binding Path=ObservableStars}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Path Fill="{Binding color,Converter={StaticResource StringToColorConverter}}">
+                                <Path.Data>
+                                    <EllipseGeometry RadiusX="{Binding radius}" RadiusY="{Binding radius}">
+                                        <EllipseGeometry.Transform>
+                                            <TranslateTransform X="{Binding x}" Y="{Binding y}"/>
+                                        </EllipseGeometry.Transform>
+                                    </EllipseGeometry>
+                                </Path.Data>
+                            </Path>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Canvas>
+        </DockPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="FlatGalaxySociety.App" Collapsed="true">
+    <Position X="35" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.GalaxyBuilder" Collapsed="true">
+    <Position X="36.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAACABAAgAAAABAEAAAAAAA=</HashCode>
+      <FileName>Builders\GalaxyBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Blink">
+    <Position X="1.25" Y="8" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAgAAgAAAAABAAgAAAAAAAAAAAAAAAAAIQAAAAAAABI=</HashCode>
+      <FileName>CollisionStrategies\Blink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Bounce">
+    <Position X="6.25" Y="8" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAIQAAAAAAABA=</HashCode>
+      <FileName>CollisionStrategies\Bounce.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.CollisionStrategy">
+    <Position X="12.5" Y="5.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIQAAAAAAABQ=</HashCode>
+      <FileName>CollisionStrategies\CollisionStrategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FlatGalaxySociety.Disappear">
+    <Position X="11.25" Y="8" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIQAAAAAAABA=</HashCode>
+      <FileName>CollisionStrategies\Disappear.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Explode">
+    <Position X="16.25" Y="8" Width="6.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAgAAAIQAAAAAAABA=</HashCode>
+      <FileName>CollisionStrategies\Explode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Grow">
+    <Position X="23.75" Y="8" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIQAAAAAAABA=</HashCode>
+      <FileName>CollisionStrategies\Grow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.InvalidInputException" Collapsed="true">
+    <Position X="43.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\InvalidInputException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.InvalidLinkAttemptException" Collapsed="true">
+    <Position X="35" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\InvalidLinkAttemptException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.NoFileSelectedException" Collapsed="true">
+    <Position X="42" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\NoFileSelectedException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.ImporterFactory" Collapsed="true">
+    <Position X="42" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAABAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Factories\ImporterFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.ParserFactory" Collapsed="true">
+    <Position X="43.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA=</HashCode>
+      <FileName>Factories\ParserFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.ReaderFactory" Collapsed="true">
+    <Position X="35" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Factories\ReaderFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.StarFactory" Collapsed="true">
+    <Position X="35" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAABAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Factories\StarFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.DiscImporter">
+    <Position X="13" Y="18.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Importers\DiscImporter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.HttpImporter">
+    <Position X="16.25" Y="18.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Importers\HttpImporter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Importer">
+    <Position X="14.75" Y="16.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAIAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Importers\Importer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FlatGalaxySociety.Asteroid">
+    <Position X="9" Y="22" Width="7" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Models\Asteroid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Galaxy" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="35" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIBAAAAAAgAAIAAAAAAAAAQAAACAAAAAAABAQBA=</HashCode>
+      <FileName>Models\Galaxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FlatGalaxySociety.Planet">
+    <Position X="0.5" Y="22" Width="7.75" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAACAAAAAAAAAAAAEAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Models\Planet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Star">
+    <Position X="5" Y="16.5" Width="6.75" />
+    <TypeIdentifier>
+      <HashCode>EIgAAAIACAAAABCAAkAQAAAAAAAAAACAIABgAAAAABA=</HashCode>
+      <FileName>Models\Star.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FlatGalaxySociety.CsvParser">
+    <Position X="15.75" Y="13.75" Width="8.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Parsers\CsvParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Parser">
+    <Position X="20.5" Y="11.5" Width="8.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgCgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Parsers\Parser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.XmlParser">
+    <Position X="25.25" Y="13.75" Width="8.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAI=</HashCode>
+      <FileName>Parsers\XmlParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.DiscReader">
+    <Position X="7.25" Y="14.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Readers\DiscReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.HttpReader">
+    <Position X="10.75" Y="14.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Readers\HttpReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Reader">
+    <Position X="8.75" Y="11.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAgAAACIAEAAAAAgAAIAAA=</HashCode>
+      <FileName>Readers\IReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.GalaxyThread" Collapsed="true">
+    <Position X="40.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAgCEAIAAAAAAAAAAAAAAAABAgAAAAIAM=</HashCode>
+      <FileName>Threads\GalaxyThread.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.KeyDownBehaviour" Collapsed="true">
+    <Position X="36.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAFAABAAAAAAAAgAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Utils\Behaviours\KeyDownBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.TextInputWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="42" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\TextInputWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FlatGalaxySociety.Commands.Command">
+    <Position X="15" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\Command.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FlatGalaxySociety.Commands.OpenShortcutsCommand">
+    <Position X="1.25" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\OpenShortcutsCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Commands.PlayBackCommand">
+    <Position X="4.5" Y="3" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Commands\PlayBackCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Commands.PlayPauseCommand">
+    <Position X="9" Y="3" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Commands\PlayPauseCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Commands.SetupGalaxyDiscCommand">
+    <Position X="13.5" Y="3" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Commands\SetupGalaxyDiscCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Commands.SetupGalaxyHttpCommand">
+    <Position X="18.25" Y="3" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Commands\SetupGalaxyHttpCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Commands.SlowDownCommand">
+    <Position X="23.25" Y="3" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Commands\SlowDownCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Commands.SpeedUpCommand">
+    <Position X="27.75" Y="3" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Commands\SpeedUpCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Factories.CollisionStrategyFactory" Collapsed="true">
+    <Position X="38.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAQAAAAAAA=</HashCode>
+      <FileName>Factories\CollisionStrategyFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Memento.Caretaker" Collapsed="true">
+    <Position X="36.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAABABAACAAAAAAAAAAEAAAACAAAAABAAg=</HashCode>
+      <FileName>Memento\Caretaker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Memento.GalaxyMemento" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAEAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Memento\GalaxyMemento.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FlatGalaxySociety.Models.Connection" Collapsed="true">
+    <Position X="40.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAwAAAACAAQAAAAAAAAA=</HashCode>
+      <FileName>Models\Connection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Models.Shortcut" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAQAAAAABAQAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Models\Shortcut.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FlatGalaxySociety.Properties.Resources" Collapsed="true">
+    <Position X="36.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Properties.Settings" Collapsed="true">
+    <Position X="38.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Utils.Converters.StringToColorConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\Converters\StringToColorConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FlatGalaxySociety.Utils.DataStructures.DropOutStack&lt;T&gt;" Collapsed="true">
+    <Position X="43.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAgAAAwAAACAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Utils\DataStructures\DropOutStack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.ViewModels.MainViewModel" Collapsed="true">
+    <Position X="38.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAggABAAQABAgICYAEAAAAgCAIAwAACAAAQAACAAAk=</HashCode>
+      <FileName>ViewModels\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.ViewModels.ShortcutViewModel" Collapsed="true">
+    <Position X="42" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAABCAAAAQAAIAAAAAAAEAAQ=</HashCode>
+      <FileName>ViewModels\ShortcutViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.ViewModels.TextInputViewModel" Collapsed="true">
+    <Position X="40.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAACAAAAACAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\TextInputViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.ViewModels.ViewModelLocator" Collapsed="true">
+    <Position X="43.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>ViewModels\ViewModelLocator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatGalaxySociety.Views.ShortcutWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ShortcutWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FlatGalaxySociety.Visitor.ConnectionVisitor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="42" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Visitor\ConnectionVisitor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FlatGalaxySociety.Visitor.StarVisitor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="36.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Visitor\StarVisitor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="FlatGalaxySociety.Memento.IMemento&lt;T&gt;" Collapsed="true">
+    <Position X="36.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Memento\IMemento.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FlatGalaxySociety.Utils.Interfaces.ICloneable&lt;T&gt;" Collapsed="true">
+    <Position X="35" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Utils\Interfaces\ICloneable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FlatGalaxySociety.Visitor.IVisitor" Collapsed="true">
+    <Position X="38.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Visitor\IVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
