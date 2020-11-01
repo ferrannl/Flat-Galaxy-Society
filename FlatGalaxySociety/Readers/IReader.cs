@@ -37,14 +37,12 @@ namespace FlatGalaxySociety
 
         public List<string> GetLines(StreamReader file)
         {
-            int counter = 0;
             string ln;
             List<string> lines = new List<string>();
 
             while ((ln = file.ReadLine()) != null)
             {
                 lines.Add(ln);
-                counter++;
             }
             return lines;
         }

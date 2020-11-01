@@ -90,7 +90,7 @@ namespace FlatGalaxySociety.ViewModels
                 Galaxy galaxy = Build(starList, neighbourList);
                 StartGalaxyThread(galaxy);
             }
-            catch (FileNotFoundException e)
+            catch (Exception e)
             {
                 MessageBox.Show(e.Message);
             }
